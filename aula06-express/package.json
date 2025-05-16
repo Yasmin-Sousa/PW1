@@ -1,0 +1,19 @@
+{
+  "name": "aula06-express",
+  "version": "1.0.0",
+  "description": "Aula 06 Express",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "NodeJS",
+    "Express"
+  ],
+  "author": "Yasmin-Sousa",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0",
+    "nodemon": "^3.1.10"
+  }
+}
