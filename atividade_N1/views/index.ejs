@@ -1,0 +1,66 @@
+<%- include('partials/header.ejs', { user: user }) %>
+	<div class="flex md:flex-row flex-col-reverse w-full">
+		<%- include('partials/channel-sidebar.ejs') %>
+			<div class="md:w-4/6">
+				<div class="p-4">
+					<div class="relative">
+						<% if (user) { %>
+							<label for="newPostTextArea" class="block text-xl font-bold text-green-950 mb-2">Nova
+								postagem</label>
+							<textarea placeholder="Comece a escrever aqui sua nova postagem..."
+								class="block w-full rounded-md border border-gray-300 bg-white text-gray-900 px-3 py-2 pr-20 min-h-[120px] resize-none focus:ring-2 focus:ring-blue-500"
+								id="newPostTextArea" rows="3"></textarea>
+							<div class="absolute bottom-2 right-30">
+								<select
+									class="cursor-pointer focus:border-gray-300 block w-[170px] rounded-md border border-gray-300 bg-white text-gray-900 px-2 py-1"
+									id="channelSelect">
+									<option selected>Escolha o canal</option>
+									<option value="#informática">#informática</option>
+									<option value="#química">#química</option>
+									<option value="#mecânica">#mecânica</option>
+									<option value="#edificações">#edificações</option>
+									<option value="#telecomunicações">#telecomunicações</option>
+									<option value="#eletrotécnica">#eletrotécnica</option>
+								</select>
+							</div>
+							<button onclick="newPost()" type="button"
+								class="absolute bottom-2 right-4 bg-green-700 hover:bg-green-800 cursor-pointer text-xs text-white font-semibold py-2 px-4 rounded-md shadow transition-colors flex flex-column justify-center items-center h-[30px] gap-x-1">
+								<p>Enviar</p>
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16"
+									color="#ffffff" fill="none">
+									<path
+										d="M21.0477 3.05293C18.8697 0.707363 2.48648 6.4532 2.50001 8.551C2.51535 10.9299 8.89809 11.6617 10.6672 12.1581C11.7311 12.4565 12.016 12.7625 12.2613 13.8781C13.3723 18.9305 13.9301 21.4435 15.2014 21.4996C17.2278 21.5892 23.1733 5.342 21.0477 3.05293Z"
+										fill="#ffffff" stroke="#ffffff" stroke-width="1.5"></path>
+									<path d="M11.5 12.5L15 9" stroke="#165efb" stroke-width="1.5" stroke-linecap="round"
+										stroke-linejoin="round"></path>
+								</svg>
+							</button>
+							<script>
+								// Auto-resize a textarea
+								document.addEventListener('DOMContentLoaded', function () {
+									var ta = document.getElementById('newPostTextArea');
+									function autoResize() {
+										ta.style.height = 'auto';
+										ta.style.height = ta.scrollHeight + 'px';
+									}
+									ta.addEventListener('input', autoResize);
+									autoResize();
+								});
+							</script>
+							<% } else { %>
+								<%- include('partials/not-signed.ejs') %>
+							<% } %>
+					</div>
+					<br>
+					<h3 class="text-xl font-bold text-green-950 mb-2">Postagens mais recentes</h3>
+					<div class="flex flex-col gap-y-5">
+						<% posts.forEach(post=> { %>
+							<%- include('partials/post.ejs', { user: user, postData: post }) %>
+						<% }) %>
+					</div>
+				</div>
+			</div>
+	</div>
+
+	<script src="javascripts/main.js"></script>
+	<%- include('partials/footer.ejs') %>
