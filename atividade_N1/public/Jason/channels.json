@@ -1,0 +1,32 @@
+[
+    {
+        "id": "informatica",
+        "name": "Informática",
+        "channelName": "informática"
+    },
+    {
+        "id": "quimica",
+        "name": "Química",
+        "channelName": "química"
+    },
+    {
+        "id": "edificacoes",
+        "name": "Edificações",
+        "channelName": "edificações"
+    },
+    {
+        "id": "eletrotecnica",
+        "name": "Eletrotécnica",
+        "channelName": "eletrotécnica"
+    },
+    {
+        "id": "telecomunicacoes",
+        "name": "Telecomunicações",
+        "channelName": "telecomunicações"
+    },
+    {
+        "id": "mecanica",
+        "name": "Mecânica Industrial",
+        "channelName": "mecânica"
+    }
+]
