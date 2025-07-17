@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Libertinus+Mono&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    background-color: #F4F0EA;
+    font-family: "Nunito", sans-serif;
+
+}
