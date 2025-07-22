@@ -45,7 +45,7 @@ input[type="radio"], input[type="checkbox"] {
 }
 
 input[type="text"], input[type="date"], input[type="email"]{
-    width: 100%;
+    width: 20%;
     padding: 0.6rem;
     border: 2px solid #FFB6C1;
     outline: none;
