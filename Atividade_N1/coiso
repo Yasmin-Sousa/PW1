@@ -87,20 +87,31 @@
             </section>
             <!--Pergunta 07-->
             <section>
-                <h2>Pergunta 07: Qual das diamantes tem mais poder na hierarquia gem?</h2>
+                <h2>Pergunta 07: Onde fica localizada a pedra da Jasper Magrela</h2>
                 <form>
                     <select name="pergunta7" id="p7">
-                        <option value="Damarelo">Diamante Amarelo</option>
-                        <option value="Dazul">Diamante Azul</option>
-                        <option value="Dbranco">Diamante Branco</option>
-                        <option value="Drosa">Diamante Rosa</option>
+                        <option value="braco">Braço</option>
+                        <option value="barriga">Barriga</option>
+                        <option value="peito">Peito</option>
+                        <option value="nariz">Nariz</option>
                     </select>
                 </form>
             </section>
             <!--Pergunta 08-->
             <section>
-                <h2>Pergunta 08: Qual o nome da criadora de Steven Universo?</h2>
-                <input type="text" id="p8" name="pergunta8" placeholder="Digite sua resposta...">
+                <h2>Pergunta 08: Qual a única diamante que já teve sua pedra alterada, em questão de design?</h2>
+                <!--<input type="text" id="p8" name="pergunta8" placeholder="Digite sua resposta...">-->
+                <form>
+                    <input type="radio" value="diamante branco" id="p4a" name="pergunta4">
+                    <label for="p4a">Diamante Branco</label><br>
+                    <input type="radio" value="diamante amarelo" id="p4c" name="pergunta4">
+                    <label for="p4c">Diamante Amarelo</label><br>
+                    <input type="radio" value="diamante rosa" id="p4d" name="pergunta4">
+                    <label for="p4d">Diamante Rosa</label><br>
+                    <input type="radio" value="diamante azul" id="p4b" name="pergunta4">
+                    <label for="p4b">Diamante Azul</label> 
+                    
+                </form>
             </section>
         </main>
         <footer></footer>
