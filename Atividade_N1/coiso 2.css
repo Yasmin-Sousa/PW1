@@ -6,7 +6,7 @@
     box-sizing:border-box;
 }
 body{
-    background-color: #F4F0EA;
+    background-color: #6C4A4A;
     color: #FFB6C1;
     font-family:"Nunito", sans-serif;
     font-weight: 400;
@@ -20,7 +20,7 @@ header {
 }
 
 .paragrafo-introducao{
-    color: #331F19;
+    color: #FFB6C1;
 }
 main {
     padding: 2rem;
@@ -36,7 +36,7 @@ section {
 }
 
 h2 {
-    color: #331F19;
+    color: #F4F0EA;
     font-size: 1.2rem;
 }
 
@@ -44,13 +44,13 @@ input[type="radio"], input[type="checkbox"] {
     accent-color: #331F19;
 }
 
-input[type="text"], input[type="date"], input[type="email"]{
+input[type="text"], input[type="date"] {
     width: 20%;
     padding: 0.6rem;
     border: 2px solid #FFB6C1;
     outline: none;
     border-radius: 10px;
-    background-color: transparent;
+    background-color:#FFB6C1;
 }
 
 input::placeholder {
@@ -92,9 +92,10 @@ tfoot td {
 }
 
 details {
-    background-color: #CCD595;
-    border-radius: 5px;
-    padding: 1rem;
+    background-color: #FFB6C1;
+    border-radius: 10px;
+    padding: 0.6rem;
+    width: 30%;
 }
 
 summary {
@@ -109,10 +110,11 @@ ol {
 
 ol li {
     padding: 0.2rem;
+    color:#331F19
 }
 
 fieldset {
-    border: 2px solid #CCD595;
+    border: 2px solid #FFB6C1;
     border-radius: 5px;
     padding: 1rem;
 }
@@ -125,12 +127,12 @@ legend {
 textarea {
     outline: none;
     border-radius: 5px;
-    border: 2px solid #CCD595;
+    border: 2px solid #FFB6C1;
     background-color: transparent;
 }
 
 button {
-    background-color: #CCD595;
+    background-color: #FFB6C1;
     border: none;
     padding: 0.8rem;
     color: #331F19;
@@ -150,5 +152,5 @@ footer {
 
 footer a {
     text-decoration: none;
-    color: #CCD595;
+    color: #FFB6C1;
 }
