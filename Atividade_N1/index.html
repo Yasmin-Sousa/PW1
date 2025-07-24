@@ -9,11 +9,16 @@
     </head>
     <body>
         <header>
-            <h1>Quiz Interativo Steven Universo</h1>
-            <p>Você é mesmo <strong>FÃ</strong> de <abbr title="Steven Universo">SU</abbr>?! Então venha testar seus conhecimentos sobre esse desenho maravilhoso!!</p>
-            <p>OBS: Irei considerar a ordem de lançamento dos episódios dos Estados Unidos e apenas o desenho clássico, não o <abbr title="Steven Universo">SU</abbr> Future.<br>Vamos começar!</p>
+            <div id="img estrela">
+                <img scr="img_estrela.png"alt="estrela Steven Universo">
+            </div>
+            <div id="titulo">
+                 <h1>Quiz Interativo Steven Universo</h1>
+            </div>
         </header>
         <main>
+            <p class="paragrafo-introducao" >Você é mesmo <strong>FÃ</strong> de <abbr title="Steven Universo">SU</abbr>?! Então venha testar seus conhecimentos sobre esse desenho maravilhoso!!<br>
+            OBS: Irei considerar a ordem de lançamento dos episódios dos Estados Unidos e apenas o desenho clássico, não o <abbr title="Steven Universo">SU</abbr> Future.<br>Vamos começar!</p>
             <!--Pergunta 01 vamoooooossss-->
             <section>
                 <h2>Pergunta 01: Qual foi a primeria Crystal Gem que vimos "<abbr title="Desestabilizar">poofar</abbr>" no desenho?</h2>
@@ -74,7 +79,7 @@
             </section>
             <!--Pergunta 06-->
             <section>
-                <h2>Pergunta 06: Qual era função de uma Lapis Lazuli no império gem antes da 2º Era?</h2>
+                <h2>Pergunta 06: Qual era função de uma Lapis Lazuli no império gem antes da 3º Era?</h2>
                 <form>
                     <input type="radio" value="Construir estruturas para a elite" id="p6a" name="pergunta6">
                     <label for="p6a">Construir estruturas para a elite</label><br>
@@ -86,22 +91,90 @@
             </section>
             <!--Pergunta 07-->
             <section>
-                <h2>Pergunta 07: Qual das diamantes tem mais poder na hierarquia gem?</h2>
+                <h2>Pergunta 07: Onde fica localizada a pedra da Jasper Magrela</h2>
                 <form>
                     <select name="pergunta7" id="p7">
-                        <option value="Damarelo">Diamante Amarelo</option>
-                        <option value="Dazul">Diamante Azul</option>
-                        <option value="Dbranco">Diamante Branco</option>
-                        <option value="Drosa">Diamante Rosa</option>
+                        <option value="braco">Braço</option>
+                        <option value="barriga">Barriga</option>
+                        <option value="peito">Peito</option>
+                        <option value="nariz">Nariz</option>
                     </select>
                 </form>
             </section>
             <!--Pergunta 08-->
             <section>
-                <h2>Pergunta 08: Qual o nome da criadora de Steven Universo?</h2>
-                <input type="text" id="p8" name="pergunta8" placeholder="Digite sua resposta...">
+                <h2>Pergunta 08: Qual a única diamante que já teve sua pedra alterada, em questão de design?</h2>
+                <!--<input type="text" id="p8" name="pergunta8" placeholder="Digite sua resposta...">-->
+                <form>
+                    <input type="radio" value="diamante branco" id="p4a" name="pergunta4">
+                    <label for="p4a">Diamante Branco</label><br>
+                    <input type="radio" value="diamante amarelo" id="p4c" name="pergunta4">
+                    <label for="p4c">Diamante Amarelo</label><br>
+                    <input type="radio" value="diamante rosa" id="p4d" name="pergunta4">
+                    <label for="p4d">Diamante Rosa</label><br>
+                    <input type="radio" value="diamante azul" id="p4b" name="pergunta4">
+                    <label for="p4b">Diamante Azul</label> 
+                    
+                </form>
+            </section>
+           <!--<button onclick="botaoRespostas()">Checar Respostas</button>--> 
+
+            <!--Tabela de Pontuação-->
+            <section>
+                <h2>Tabela de Pontuação</h2>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Pontuação</th>
+                            <th>Avaliação</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>0-2</td>
+                            <td>Não desista! Cada tentativa é uma oportunidade de você aprender</td>
+                        </tr>
+                        <tr>
+                            <td>3-4</td>
+                            <td>Você ainda precisa melhorar. Que tal estudar mais sobre programação?</td>
+                        </tr>
+                        <tr>
+                            <td>5-7</td>
+                            <td>Bom! Seu conhecimento em programação está satisfatório</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>Perfeito! Você está muito bem informado sobre programação</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="2">Boa sorte na próxima! Estude mais para melhorar</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+
+             <!--Lista de Respostas-->
+             <section>
+                <h2>Verifique suas respostas</h2>
+                <details>
+                    <summary>Clique aqui para ver as respostas do quiz</summary>
+                    <ol>
+                        <li>Pérola</li>
+                        <li>5 temporadas</li>
+                        <li>04/11/2013</li>
+                        <li>Canhão de Luz Laser</li>
+                        <li>Lapis Lazuli, Jasper</li>
+                        <li>Terraformar planetas</li>
+                        <li>Barriga</li>
+                        <li>Diamante Azul</li>
+                    </ol>
+                </details>
             </section>
         </main>
-        <footer></footer>
+        <footer>
+            <p class="paragrafo-footer">&copy Quiz de Steven Universo. Todos os direitos reservados.</p>
+        </footer>
     </body>
     </html>
