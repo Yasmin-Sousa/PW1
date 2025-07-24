@@ -19,9 +19,11 @@ header {
     text-align: center;
 }
 
+
 .paragrafo-introducao{
     color: #FFB6C1;
 }
+
 main {
     padding: 2rem;
     display: flex;
@@ -44,7 +46,7 @@ input[type="radio"], input[type="checkbox"] {
     accent-color: #331F19;
 }
 
-input[type="text"], input[type="date"] {
+input[type="date"] {
     width: 20%;
     padding: 0.6rem;
     border: 2px solid #FFB6C1;
@@ -134,4 +136,3 @@ footer {
 .paragrafo-footer {
     color: #F4F0EA
 }
-
