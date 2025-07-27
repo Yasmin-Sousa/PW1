@@ -13,6 +13,11 @@ body{
 
 }
 
+img{
+    width: 5rem;
+    border-radius: 10px;
+}
+
 header {
     padding: 2rem;
     background-color: #331F19;
@@ -55,10 +60,6 @@ input[type="date"] {
     background-color:#FFB6C1;
 }
 
-input::placeholder {
-    color: #CBBBA7;
-}
-
 select {
     cursor: pointer;
     background-color: #331F19;
@@ -74,7 +75,7 @@ select {
 table {
     width: 100%;
     border-collapse: collapse;
-    border-radius :10px;
+    border-radius: 10px;
 }
 
 th {
@@ -123,7 +124,7 @@ button {
     border: none;
     padding: 0.8rem;
     color: #331F19;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
 }
 
