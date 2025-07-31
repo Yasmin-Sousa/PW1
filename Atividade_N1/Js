@@ -1,0 +1,20 @@
+function verificarResposta() {
+  // Seleciona o input marcado da pergunta q1
+  const respostaSelecionada = document.querySelector('input[name="q1"]:checked');
+
+  // Verifica se o usuário marcou alguma opção
+  if (!respostaSelecionada) {
+    document.getElementById("resultado").innerText = "Por favor, selecione uma resposta.";
+    return;
+  }
+
+  // Resposta correta
+  const respostaCorreta = "Brasilia";
+
+  // Verifica se a resposta está correta
+  if (respostaSelecionada.value === respostaCorreta) {
+    document.getElementById("resultado").innerText = "✅ Resposta correta!";
+  } else {
+    document.getElementById("resultado").innerText = "❌ Resposta errada!";
+  }
+}
