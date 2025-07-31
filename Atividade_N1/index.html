@@ -11,7 +11,7 @@
     <body>
         <div>
             <header>
-                <div id="img_estrela">
+                <div id="imgEstrela">
                     <img scr="./assets/estrela_SU.webp" alt="estrela Steven Universo">
                 </div>
                 <div id="titulo">
@@ -31,7 +31,7 @@
                     <input type="radio" value="Pérola" id="p1b" name="pergunta1">
                     <label for="p1b">Pérola</label><br>
                     <input type="radio" value="Ametista" id="p1c" name="pergunta1">
-                    <label for="p1c">Ametista</label>
+                    <label for="p1c">Ametista</label><br>
                 </form>
             </section>
             <!--Pergunta 02 yyeeeaahhh-->
@@ -70,13 +70,13 @@
             <section>
                 <h2 id="p5">Pergunta 05: A fusão Malaquita é composta por quais gems?</h2>
                 <form>
-                    <input type="checkbox" value="Ametista" id="p5a" name="pergunta4">
+                    <input type="checkbox" value="Ametista" id="p5a" name="pergunta5">
                     <label for="p5a">Ametista</label><br>
-                    <input type="checkbox" value="Lapis Lazuli" id="p5b" name="pergunta4">
+                    <input type="checkbox" value="Lapis Lazuli" id="p5b" name="pergunta5">
                     <label for="p5b">Lapis Lazuli</label><br>
-                    <input type="checkbox" value="Jade" id="p5c" name="pergunta4">
+                    <input type="checkbox" value="Jade" id="p5c" name="pergunta5">
                     <label for="p5c">Jade</label><br>
-                    <input type="checkbox" value="Jasper" id="p5d" name="pergunta4">
+                    <input type="checkbox" value="Jasper" id="p5d" name="pergunta5">
                     <label for="p5d">Jasper</label>
                 </form>
             </section>
@@ -109,18 +109,19 @@
                 <h2>Pergunta 08: Qual a única diamante que já teve sua pedra alterada, em questão de design?</h2>
                 <!--<input type="text" id="p8" name="pergunta8" placeholder="Digite sua resposta...">-->
                 <form>
-                    <input type="radio" value="diamante branco" id="p4a" name="pergunta4">
+                    <input type="radio" value="Diamante Branco" id="p4a" name="pergunta8">
                     <label for="p4a">Diamante Branco</label><br>
-                    <input type="radio" value="diamante amarelo" id="p4c" name="pergunta4">
-                    <label for="p4c">Diamante Amarelo</label><br>
-                    <input type="radio" value="diamante rosa" id="p4d" name="pergunta4">
-                    <label for="p4d">Diamante Rosa</label><br>
-                    <input type="radio" value="diamante azul" id="p4b" name="pergunta4">
-                    <label for="p4b">Diamante Azul</label> 
+                    <input type="radio" value="Diamante Amarelo" id="p4b" name="pergunta8">
+                    <label for="p4b">Diamante Amarelo</label><br>
+                    <input type="radio" value="Diamante Rosa" id="p4c" name="pergunta8">
+                    <label for="p4c">Diamante Rosa</label><br>
+                    <input type="radio" value="Diamante Azul" id="p4d" name="pergunta8">
+                    <label for="p4d">Diamante Azul</label> 
                     
                 </form>
             </section>
-           <!--<button onclick="botaoRespostas()">Checar Respostas</button>--> 
+            <button type="button" onclick="verificarQuiz()">Verificar Rsultado</button><br>
+                    <p id="resultado"></p>
 
             <!--Tabela de Pontuação-->
             <section>
