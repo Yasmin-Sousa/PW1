@@ -122,8 +122,10 @@ ol li {
 
 button {
     background-color: #FFB6C1;
+    margin: 0.5rem;
     border: none;
     padding: 0.8rem;
+    width: 80%;
     color: #331F19;
     border-radius: 10px;
     cursor: pointer;
