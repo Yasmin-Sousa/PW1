@@ -44,8 +44,8 @@ function verificarQuiz() {
     const respostasCorretas = {
       pergunta1: "Pérola",
       pergunta4: "Canhão de Luz Laser",
-      pergunta6: "Terraformar planetas",
-      pergunta8: "Diamante Azul"
+      pergunta2: "Terraformar planetas",
+      pergunta3: "Diamante Azul"
     }
   
     let acertos = 0;
