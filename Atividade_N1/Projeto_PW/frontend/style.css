@@ -59,6 +59,9 @@ input[type="date"] {
     border-radius: 10px;
     background-color:#FFB6C1;
 }
+input[type="text"]{
+    width: 20%;
+}
 
 select {
     cursor: pointer;

@@ -94,4 +94,8 @@ function verificarQuiz() {
     // Exibe resultado final
     document.getElementById("resultado").innerText =
       `Você acertou ${acertos} de ${total} perguntas.`;
+
+    // Mostrar campo de nome e salvar pontuação
+    document.getElementById("envioResultado").style.display = "block";
+    sessionStorage.setItem("pontuacaoFinal", acertos); // guarda pontuação temporariamente
 }

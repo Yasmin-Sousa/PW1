@@ -22,6 +22,8 @@
     <main>
             <p class="paragrafo-introducao" >Você é mesmo <strong>FÃ</strong> de <abbr title="Steven Universo">SU</abbr>?! Então venha testar seus conhecimentos sobre esse desenho maravilhoso!!<br>
             OBS: Irei considerar a ordem de lançamento dos episódios dos Estados Unidos e apenas o desenho clássico, não o <abbr title="Steven Universo">SU</abbr> Future.<br>Vamos começar!</p>
+            
+            
             <!--Pergunta 01 vamoooooossss-->
             <section>
                 <h2 >Pergunta 01: Qual foi a primeria Crystal Gem que vimos "<abbr title="Desestabilizar">poofar</abbr>" no desenho?</h2>
@@ -130,6 +132,18 @@
             <button type="button" onclick="verificarQuiz()">Verificar Rsultado</button><br>
                     <p id="resultado"></p>
 
+            <form>
+                <fieldset>
+                    <legend>Digite seu nome para salvar no ranking:</legend>
+                    <div id="envioResultado" style="display:none;">
+                        <!--<p>Digite seu nome para salvar no ranking:</p>-->
+                        <input type="text" id="nomeUsuario">
+                        <button onclick="enviarResultado()">Enviar Resultado</button>
+                    </div>
+                </fieldset>
+            </form>
+                <h2>RANKING</h2>
+                <ul id="rankingLista"></ul>
 
             <!--Tabela de Pontuação-->
             <section>
@@ -144,19 +158,19 @@
                     <tbody>
                         <tr>
                             <td>0-2</td>
-                            <td>Não desista! Cada tentativa é uma oportunidade de você aprender</td>
+                            <td>Você e Ametista possuem o mesmo nível de conhecimento sobre o mundo Gem. </td>
                         </tr>
                         <tr>
                             <td>3-4</td>
-                            <td>Você ainda precisa melhorar. Que tal estudar mais sobre programação?</td>
+                            <td>Que tal maratonar alguns episódios na sua garagem de tralhas?</td>
                         </tr>
                         <tr>
                             <td>5-7</td>
-                            <td>Bom! Seu conhecimento em programação está satisfatório</td>
+                            <td>Nem garnet conseguiu prever esse resultado, ela está feliz!!!</td>
                         </tr>
                         <tr>
                             <td>8</td>
-                            <td>Perfeito! Você está muito bem informado sobre programação</td>
+                            <td>PEARLFECT!! Você merece um ponto da Pérola e um prêmio da pochete de prêmios da Pérola!</td>
                         </tr>
                     </tbody>
                     <tfoot>
