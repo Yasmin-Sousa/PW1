@@ -99,3 +99,36 @@ function verificarQuiz() {
     document.getElementById("envioResultado").style.display = "block";
     sessionStorage.setItem("pontuacaoFinal", acertos); // guarda pontuação temporariamente
 }
+
+function enviarResultado() {
+  const nome = document.getElementById("nomeUsuario").value.trim();
+  const pontos = Number(sessionStorage.getItem("pontuacaoFinal"));
+
+  if (!nome) {
+    alert("Por favor, digite um nome.");
+    return;
+  }
+
+  fetch("http://localhost:3000/resultado", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ nome, pontos }),
+  })
+    .then(res => res.json())
+    .then(() => {
+      alert("Resultado enviado!");
+      mostrarRanking();
+    });
+}
+
+function mostrarRanking() {
+  fetch("http://localhost:3000/ranking")
+    .then(res => res.json())
+    .then(ranking => {
+      const lista = document.getElementById("rankingLista");
+      lista.innerHTML = "";
+      ranking.forEach((r, i) => {
+        lista.innerHTML += `<li>${i + 1}. ${r.nome} — ${r.pontos} ponto(s)</li>`;
+      });
+    });
+}
